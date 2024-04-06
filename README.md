@@ -1,7 +1,3 @@
-# Manual Testing
-## _Black-box Testing_
-
-__
 # Website Manual Testing
 
 This repository contains documentation for manual testing performed on the (https://www.testbytes.net) website.
@@ -10,8 +6,8 @@ This repository contains documentation for manual testing performed on the (http
 - [Introduction](#introduction)
 - [Test Case Types](#testing-types)
   - [Functional Testing](#functionality-testing)
-    1. [Usability Testing](#usability-testing)
-    2. [Compatibility Testing](#compatibility-testing)
+    1. [Smoke/Sanity Testing](#usability-testing)
+    2. [Unit Testing](#compatibility-testing)
 
   - [Non-Functional Testing](#functionality-testing)
     1. [Performance Testing](#performance-testing)
@@ -35,17 +31,27 @@ Functional testing checks an application, website, or system to ensure that it i
 
 In the planning stages, every project creates a document listing functional or requirement specifications. Essentially, it is a list of what the app/system/website is supposed to do from a user’s perspective.
 
-### Usability Testing
 
-Discuss the tests carried out to evaluate the website's ease of use and user experience. Mention aspects such as navigation clarity, layout consistency, and overall user satisfaction.
-
-### Compatibility Testing
+* Smoke/Sanity Testing
 
 Explain how compatibility tests were performed to ensure the website works correctly across different browsers, devices, and screen sizes. List the browsers and devices tested, along with any compatibility issues encountered.
 
-### Performance Testing
+* Unity Testing
+
+Explain how compatibility tests were performed to ensure the website works correctly across different browsers, devices, and screen sizes. List the browsers and devices tested, along with any compatibility issues encountered.
+
+
+### Non - Functional Testing
+
+As the name suggets, it checks the non-functional aspects (performance, usability, reliability, etc) of a software application. It is designed to test the readiness of a system as per nonfunctional parameters which are never addressed by functional testing.
+
+* Performance Testing
 
 Detail the performance tests executed to assess the website's responsiveness, load times, and resource utilization. Include information on tools used for performance monitoring and any performance bottlenecks identified.
+
+ * Usability Testing
+
+Discuss the tests carried out to evaluate the website's ease of use and user experience. Mention aspects such as navigation clarity, layout consistency, and overall user satisfaction.
 
 ## Test Cases
 
