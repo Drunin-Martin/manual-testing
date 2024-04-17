@@ -7,16 +7,12 @@ This repository contains documentation for manual testing performed on the [Test
 - [Test Case Types](#test-case-types)
   - [Functional Testing](#functional-testing)
     - [Smoke Testing](#smoke-testing)
-    - [Unit Testing](#unit-testing)
   - [Non-Functional Testing](#non-functional-testing)
-    - [Performance Testing](#performance-testing)
-    - [Load Testing](#load-testing)
+    - [Stress Testing](#stress-testing)
 - [Test Cases](#test-cases)
 - [Conclusion](#conclusion)
 
 ## Introduction
-
-[Provide a brief overview of the website being tested and the purpose of manual testing. Explain why manual testing is necessary despite automated testing tools.]
 
 Welcome to Testbytes, a comprehensive platform dedicated to exploring the intricacies of manual and automation testing. This website serves as a valuable resource for individuals seeking to enhance their understanding of software testing methodologies.
 
@@ -32,33 +28,66 @@ In the planning stages, every project creates a document listing functional or r
 
 * **Smoke Testing**: Smoke testing is performed in the initial phase of the software development life cycle by the developers to ensure the code module is successfully compiling and the software’s core functionality is working properly.
 
-* **Unit Testing**: A unit test is a way of testing a unit - the smallest piece of code that can be logically isolated in a system. In most programming languages, that is a function, a subroutine, a method, or property.
-
 ### Non-Functional Testing
 
 As the name suggests, it checks the non-functional aspects (performance, usability, reliability, etc.) of a software application. It is designed to test the readiness of a system as per nonfunctional parameters which are never addressed by functional testing.
 
-* **Performance Testing**: Performance testing is the practice of evaluating how a system performs in terms of responsiveness and stability under a particular workload.
-
-* **Load Testing**: Load testing is performed to determine a system's behavior under both normal and anticipated peak load conditions. It helps to identify the maximum operating capacity of an application as well as any bottlenecks and determine which element is causing degradation.
+* **Stress Testing**: Stress testing is a form of deliberately intense or thorough testing, used to determine the stability of a given system, critical infrastructure or entity.
 
 ## Test Cases
 
-Provide a list of specific test cases used during manual testing. Organize them by testing type and include steps to reproduce, expected results, and actual results for each test case.
+### 1. Smoke Test: Homepage Load Verification
 
-**Example:**
+## Objective:
+To verify that the homepage of [www.testbytes.net](https://www.testbytes.net) loads correctly and essential elements are displayed properly.
 
-1. **Functionality Testing**
-   - Test Case 1: Login Functionality
-     - Steps to Reproduce:
-       1. Navigate to the login page.
-       2. Enter valid username and password.
-       3. Click the login button.
-     - Expected Result: User should be logged in successfully.
-     - Actual Result: User is redirected to the dashboard upon successful login.
+## Pre-requisites:
+- Access to a web browser (e.g., Chrome, Firefox, Safari)
+- Internet connectivity
 
-   (Include similar test cases for other functionality tests, usability tests, compatibility tests, and performance tests)
+## Steps to Perform:
+1. **Open Web Browser:**
+   - Launch your preferred web browser (e.g., Chrome, Firefox, Safari).
 
-## Conclusion
+2. **Navigate to www.testbytes.net:**
+   - In the address bar of the web browser, enter [www.testbytes.net](https://www.testbytes.net).
 
-Summarize the findings from manual testing, highlighting any critical issues discovered and recommendations for improvement. Mention any follow-up actions, such as retesting after fixes or additional test coverage.
+3. **Observe Homepage Load:**
+   - Once the website loads, observe the homepage for any visible elements such as:
+     - Header section (containing logo, navigation menu)
+     - Banner or hero image
+     - Sections introducing Testbytes services or features
+     - Footer section (containing links to About Us, Contact, etc.)
+
+4. **Verify Navigation Menu:**
+   - Check that the navigation menu is visible and contains links to essential pages such as:
+     - Home
+     - Services
+     - About Us
+     - Contact
+
+5. **Confirm Links Functionality:**
+   - Click on each link in the navigation menu and ensure that it correctly navigates to the corresponding page without any errors.
+
+6. **Check Footer Links:**
+   - Scroll down to the footer section and verify the functionality of links such as:
+     - About Us
+     - Contact
+     - Privacy Policy
+     - Terms of Service
+
+7. **Confirm Responsive Design:**
+   - Resize the browser window to emulate different screen sizes (desktop, tablet, mobile).
+   - Ensure that the website layout adjusts appropriately and remains functional across various devices.
+
+8. **Final Verification:**
+   - Quickly scan the entire homepage for any unexpected layout issues, missing images, or broken elements.
+   - Verify that there are no error messages, broken links, or JavaScript errors in the browser console.
+
+## Conclusion:
+- If all elements load correctly and the website appears as expected, consider the smoke test passed.
+- If any issues are identified, document them for further investigation or resolution.
+
+## Notes:
+- The smoke test focuses on quickly validating the basic functionality and appearance of the website's homepage.
+- It is not intended to provide comprehensive coverage but rather to serve as an initial check to ensure that the website is deployable and ready for further testing.
