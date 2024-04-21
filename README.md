@@ -109,7 +109,7 @@ To verify that the homepage of [www.testbytes.net](https://www.testbytes.net) lo
    - In JMeter, a test plan is the container that holds all the elements of your test. Right-click on "Test Plan" in the left panel and choose "Add > Threads (Users) > jp@gc - Ultimate Thread Group" to add a thread group to your test plan.
 
 4. **Configure Ultimate Thread Group:**
-   - In the Ultimate Thread Group settings, specify the number of users (threads) you want to simulate, ramp-up time/Startup Time (represents ramp-up time and it divides among each user), Hold Load For (represents a steady state of workload scenario), and Shutdown Time (represents ramp-down time. same concept as Start-up time).
+   - In the Ultimate Thread Group settings, specify the number of users (threads) you want to simulate, ramp-up time/Startup Time (represents ramp-up time and it divides among each user), Hold Load For (represents a steady state of workload scenario), and Shutdown Time (represents ramp-down time. Same concept as Start-up time).
 
    - For our Stress Test we will be using the following data:
    
