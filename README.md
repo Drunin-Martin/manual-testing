@@ -36,7 +36,7 @@ As the name suggests, it checks the non-functional aspects (performance, usabili
 
 ## Test Cases
 
-### 1. Smoke Test: Homepage Load Verification
+###  Smoke Test: Homepage Load Verification
 
 ### Objective:
 To verify that the homepage of [www.testbytes.net](https://www.testbytes.net) loads correctly and essential elements are displayed properly.
@@ -92,7 +92,7 @@ To verify that the homepage of [www.testbytes.net](https://www.testbytes.net) lo
 - The smoke test focuses on quickly validating the basic functionality and appearance of the website's homepage.
 - It is not intended to provide comprehensive coverage but rather to serve as an initial check to ensure that the website is deployable and ready for further testing.
 
-### 2. Performing a Stress Test Using JMeter
+### Performing a Stress Test Using JMeter
 
 ### Step-by-Step Guide
 
@@ -109,7 +109,7 @@ To verify that the homepage of [www.testbytes.net](https://www.testbytes.net) lo
    - In JMeter, a test plan is the container that holds all the elements of your test. Right-click on "Test Plan" in the left panel and choose "Add > Threads (Users) > jp@gc - Ultimate Thread Group" to add a thread group to your test plan.
 
 4. **Configure Ultimate Thread Group:**
-   - In the Thread Group settings, specify the number of users (threads) you want to simulate, ramp-up time (how long it takes for all threads to start), loop count (number of times each user should execute the test), and duration (how long the test should run).
+   - In the Ultimate Thread Group settings, specify the number of users (threads) you want to simulate, ramp-up time/Startup Time (represents ramp-up time and it divides among each user), Hold Load For (represents a steady state of workload scenario), and Shutdown Time (represents ramp-down time. same concept as Start-up time).
 
    - For our Stress Test we will be using the following data:
    
@@ -127,12 +127,12 @@ To verify that the homepage of [www.testbytes.net](https://www.testbytes.net) lo
    - Right-click on the Thread Group you created and choose "Add > Sampler > HTTP Request" to add an HTTP request sampler. This sampler represents the web request you want to test.
 
 6. **Configure HTTP Request:**
-   - In the HTTP Request sampler settings, enter the server name or IP address, protocol (HTTP or HTTPS), method (GET, POST, etc.), path, and any parameters or headers required for the request.
+   - In the HTTP Request sampler settings, enter the server name (www.testbytes.net) or IP address, protocol (HTTP or HTTPS), method (GET, POST, etc.), path (here we should only add "/"), and any parameters or headers required for the request.
 
-   - Our website is [Testbytes](https://www.testbytes.net/).
+   - Our website to test is [Testbytes](https://www.testbytes.net/).
 
 7. **Add Listeners:**
-   - Listeners are used to view the results of your test. Right-click on the Thread Group and choose "Add > Listener" to add a listener. Common listeners include "View Results Tree" for detailed results and "Summary Report" for a summary of results.
+   - Listeners are used to view the results of your test. Right-click on the Thread Group and choose "Add > Listener" to add a listener. Common listeners include "View Results Tree" for detailed results, "Summary Report" for a summary of results and "View Results in Table" which conveys about each sample in the form of a table.
 
 8. **Run the Test:**
    - Click on the "Start" button (green triangle) in the toolbar to run your test. JMeter will simulate the specified number of users sending requests to the server according to the configured settings.
@@ -145,6 +145,3 @@ To verify that the homepage of [www.testbytes.net](https://www.testbytes.net) lo
 
 11. **Save and Share Results:**
     - Save your test plan for future use and share the results with stakeholders for analysis and decision-making.
-
-12. **Optional: Distributed Testing:**
-    - For large-scale stress testing, you can set up JMeter in a distributed mode where multiple JMeter instances (slaves) are controlled by a central JMeter instance (master). This allows you to simulate a higher number of users and distribute the load across multiple machines.
