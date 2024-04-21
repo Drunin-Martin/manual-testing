@@ -94,7 +94,7 @@ To verify that the homepage of [www.testbytes.net](https://www.testbytes.net) lo
 - The smoke test focuses on quickly validating the basic functionality and appearance of the website's homepage.
 - It is not intended to provide comprehensive coverage but rather to serve as an initial check to ensure that the website is deployable and ready for further testing.
 
-### <span style="font-size:0.5em;">Performing a Stress Test Using JMeter</span>
+### <span style="font-size:1.5;">Performing a Stress Test Using JMeter</span>
 
 ### Step-by-Step Guide
 
