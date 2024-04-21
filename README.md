@@ -1,4 +1,4 @@
-# Website Manual Testing
+# Manual Testing
 
 This repository contains documentation for manual testing performed on the [Testbytes](https://www.testbytes.net) website.
 
