@@ -10,6 +10,8 @@ This repository contains documentation for manual testing performed on the [Test
   - [Non-Functional Testing](#non-functional-testing)
     - [Stress Testing](#stress-testing)
 - [Test Cases](#test-cases)
+  - [Smoke Testing](#smoke-test-homepage-load-verification)
+  - [Performing a Stress Test Using JMeter](#performing-a-stress-test-using-jmeter)
 - [Conclusion](#conclusion)
 
 ## Introduction
