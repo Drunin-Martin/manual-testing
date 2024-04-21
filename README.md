@@ -38,7 +38,11 @@ As the name suggests, it checks the non-functional aspects (performance, usabili
 
 ## Test Cases
 
-###  <span style="font-size: larger;">Smoke Test: Homepage Load Verification</span>
+<br>
+
+##  Smoke Test: Homepage Load Verification
+
+<br>
 
 ## Objective:
 To verify that the homepage of [www.testbytes.net](https://www.testbytes.net) loads correctly and essential elements are displayed properly.
@@ -94,7 +98,9 @@ To verify that the homepage of [www.testbytes.net](https://www.testbytes.net) lo
 - The smoke test focuses on quickly validating the basic functionality and appearance of the website's homepage.
 - It is not intended to provide comprehensive coverage but rather to serve as an initial check to ensure that the website is deployable and ready for further testing.
 
-### <span style="font-size: xxx-large;">Performing a Stress Test Using JMeter</span>
+<br>
+
+## Performing a Stress Test Using JMeter
 
 ### Step-by-Step Guide
 
@@ -134,7 +140,7 @@ To verify that the homepage of [www.testbytes.net](https://www.testbytes.net) lo
    - Our website to test is [Testbytes](https://www.testbytes.net/).
 
 ## Add Listeners:
-   - Listeners are used to view the results of your test. Right-click on the Thread Group and choose "Add > Listener" to add a listener. Common listeners include "View Results Tree" for detailed results, "Summary Report" for a summary of results and "View Results in Table" which conveys each sample in the form of a table.
+   - Listeners are used to view the results of your test. Right-click on the Thread Group and choose "Add > Listener" to add a listener. Common listeners include "View Results Tree" for detailed results, "Summary Report" for a summary of results and "View Results in Table" which conveys about each sample in the form of a table.
 
 ## Run the Test:
    - Click on the "Start" button (green triangle) in the toolbar to run your test. JMeter will simulate the specified number of users sending requests to the server according to the configured settings.
