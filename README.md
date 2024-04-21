@@ -1,4 +1,4 @@
-# Manual Testing
+# Website Manual Testing
 
 This repository contains documentation for manual testing performed on the [Testbytes](https://www.testbytes.net) website.
 
@@ -11,7 +11,7 @@ This repository contains documentation for manual testing performed on the [Test
     - [Stress Testing](#stress-testing)
 - [Test Cases](#test-cases)
   - [Smoke Testing](#smoke-test-homepage-load-verification)
-  - [Stress Testing](#performing-a-stress-test-using-jmeter)
+  - [Performing a Stress Test Using JMeter](#performing-a-stress-test-using-jmeter)
 - [Conclusion](#conclusion)
 
 ## Introduction
@@ -38,9 +38,9 @@ As the name suggests, it checks the non-functional aspects (performance, usabili
 
 ## Test Cases
 
-###  Smoke Test: Homepage Load Verification
+###  <span style="font-size: larger;">Smoke Test: Homepage Load Verification</span>
 
-### Objective:
+## Objective:
 To verify that the homepage of [www.testbytes.net](https://www.testbytes.net) loads correctly and essential elements are displayed properly.
 
 ## Pre-requisites:
@@ -94,23 +94,23 @@ To verify that the homepage of [www.testbytes.net](https://www.testbytes.net) lo
 - The smoke test focuses on quickly validating the basic functionality and appearance of the website's homepage.
 - It is not intended to provide comprehensive coverage but rather to serve as an initial check to ensure that the website is deployable and ready for further testing.
 
-### Performing a Stress Test Using JMeter
+### <span style="font-size: larger;">Performing a Stress Test Using JMeter</span>
 
 ### Step-by-Step Guide
 
-1. **Pre-requisites:**
+## Pre-requisites:
    - Download [Java](https://www.oracle.com/java/technologies/downloads/#java11) from the official website to be able to run JMeter
    - Download the latest version of Apache JMeter from the [official website](https://jmeter.apache.org/download_jmeter.cgi).
    - Download JMeter Plugins Manager from [JMeter website](https://jmeter-plugins.org/install/Install/)
 
 
-2. **Launch JMeter:**
+## Launch JMeter:
    - Once installed, open JMeter by running the `jmeter.bat` (for Windows).
 
-3. **Create a Test Plan:**
+## Create a Test Plan:
    - In JMeter, a test plan is the container that holds all the elements of your test. Right-click on "Test Plan" in the left panel and choose "Add > Threads (Users) > jp@gc - Ultimate Thread Group" to add a thread group to your test plan.
 
-4. **Configure Ultimate Thread Group:**
+## Configure Ultimate Thread Group:
    - In the Ultimate Thread Group settings, specify the number of users (threads) you want to simulate, ramp-up time/Startup Time (represents ramp-up time and it divides among each user), Hold Load For (represents a steady state of workload scenario), and Shutdown Time (represents ramp-down time. Same concept as Start-up time).
 
    - For our Stress Test we will be using the following data:
@@ -125,25 +125,25 @@ To verify that the homepage of [www.testbytes.net](https://www.testbytes.net) lo
       - 100 threads, 3825 Initial Delay, 125 Startup Time, 300 Hold Load for (sec), 75 Shutdown Time
       - 75 threads, 4250 Initial Delay, 125 Startup Time, 300 Hold Load for (sec), 50 Shutdown Time
 
-5. **Add Sampler:**
+## Add Sampler:
    - Right-click on the Thread Group you created and choose "Add > Sampler > HTTP Request" to add an HTTP request sampler. This sampler represents the web request you want to test.
 
-6. **Configure HTTP Request:**
-   - In the HTTP Request sampler settings, enter the server name (www.testbytes.net) or IP address, protocol (HTTP or HTTPS), method (GET, POST, etc.), path (here we should add only "/"), and any parameters or headers required for the request.
+## Configure HTTP Request:
+   - In the HTTP Request sampler settings, enter the server name (www.testbytes.net) or IP address, protocol (HTTP or HTTPS), method (GET, POST, etc.), path (here we should only add "/"), and any parameters or headers required for the request.
 
    - Our website to test is [Testbytes](https://www.testbytes.net/).
 
-7. **Add Listeners:**
+## Add Listeners:
    - Listeners are used to view the results of your test. Right-click on the Thread Group and choose "Add > Listener" to add a listener. Common listeners include "View Results Tree" for detailed results, "Summary Report" for a summary of results and "View Results in Table" which conveys about each sample in the form of a table.
 
-8. **Run the Test:**
+## Run the Test:
    - Click on the "Start" button (green triangle) in the toolbar to run your test. JMeter will simulate the specified number of users sending requests to the server according to the configured settings.
 
-9. **Analyze Results:**
+## Analyze Results:
    - Once the test is complete, you can analyze the results using the listeners you added. Pay attention to metrics such as response time, throughput, error rate, and server resource usage.
 
-10. **Adjust Test Plan:**
-    - Based on the results, you may need to adjust your test plan by tweaking the number of users, ramp-up time, or other settings to achieve the desired stress level.
+## Adjust Test Plan:
+   - Based on the results, you may need to adjust your test plan by tweaking the number of users, ramp-up time, or other settings to achieve the desired stress level.
 
-11. **Save and Share Results:**
-    - Save your test plan for future use and share the results with stakeholders for analysis and decision-making.
+## Save and Share Results:
+   - Save your test plan for future use and share the results with stakeholders for analysis and decision-making.
