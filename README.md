@@ -11,7 +11,7 @@ This repository contains documentation for manual testing performed on the [Test
     - [Stress Testing](#stress-testing)
 - [Test Cases](#test-cases)
   - [Smoke Testing](#smoke-test-homepage-load-verification)
-  - [Performing a Stress Test Using JMeter](#performing-a-stress-test-using-jmeter)
+  - [Stress Testing](#performing-a-stress-test-using-jmeter)
 - [Conclusion](#conclusion)
 
 ## Introduction
