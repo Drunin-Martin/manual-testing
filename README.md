@@ -129,7 +129,7 @@ To verify that the homepage of [www.testbytes.net](https://www.testbytes.net) lo
    - Right-click on the Thread Group you created and choose "Add > Sampler > HTTP Request" to add an HTTP request sampler. This sampler represents the web request you want to test.
 
 6. **Configure HTTP Request:**
-   - In the HTTP Request sampler settings, enter the server name (www.testbytes.net) or IP address, protocol (HTTP or HTTPS), method (GET, POST, etc.), path (here we should only add "/"), and any parameters or headers required for the request.
+   - In the HTTP Request sampler settings, enter the server name (www.testbytes.net) or IP address, protocol (HTTP or HTTPS), method (GET, POST, etc.), path (here we should add only "/"), and any parameters or headers required for the request.
 
    - Our website to test is [Testbytes](https://www.testbytes.net/).
 
